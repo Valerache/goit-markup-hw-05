@@ -324,6 +324,11 @@ img {
   color: #ffffff;
 }
 
+.about-overlay-title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+}
+
 /* Team */
 
 /* .team {
@@ -710,7 +715,7 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 30px;
