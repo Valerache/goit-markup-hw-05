@@ -17,6 +17,8 @@
 
   /* Others */
   --fill-cl: #afb1b8;
+
+  --anim: 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -151,7 +153,6 @@ img {
 .cnt-link:hover,
 .cnt-link:focus {
   color: var(--accent-cl);
-  transition: color 5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current:visited {
@@ -170,7 +171,6 @@ img {
   width: 100%;
   background-color: var(--accent-cl);
   border-radius: 2px;
-  transition: color 5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link {
@@ -180,6 +180,8 @@ img {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+
+  transition: var(--anim );
 }
 
 .cnt-link {
@@ -191,20 +193,23 @@ img {
   line-height: calc(16 / 14);
   color: var(--scn-txt-cl);
   letter-spacing: 0.02em;
+
+  transition: var(--anim );
 }
 
-.cnt-item {
+/* .cnt-item {
   transition: color 5s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .cnt-icon {
   fill: var(--scn-txt-cl);
+
+  transition: var(--anim );
 }
 
 .cnt-link:hover .cnt-icon,
 .cnt-link:focus .cnt-icon {
   fill: var(--accent-cl);
-  transition: color 5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-group {
@@ -407,6 +412,8 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition: var(--anim );
 }
 
 .socials-link:hover,
@@ -417,13 +424,19 @@ img {
 
 .socials-icon {
   fill: var(--fill-cl);
+
+  transition: var(--anim );
 }
 
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
   fill: var(--light-txt-cl);
-  
 }
+
+/* .socials-icon:hover,
+.socials-icon:focus {
+  fill: var(--light-txt-cl);
+} */
 
 /* Clients */
 
@@ -451,10 +464,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: var(--anim );
 }
 
 .clients-icon {
   fill: var(--fill-cl);
+
+  transition: var(--anim );
 }
 
 .clients-link:hover,
@@ -491,7 +508,7 @@ img {
 
 .prtf-btn,
 .active {
-  background-color: var(--fourth-bg-cl)
+  background-color: var(--fourth-bg-cl);
 }
 
 .prtf-btn:hover,
@@ -500,18 +517,18 @@ img {
   color: var(--light-txt-cl);
   box-shadow: 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  
 }
 
 .img-item {
   background-color: var(--light-txt-cl);
   border: 1px solid var(--fourth-bg-cl);
+
+  transition: var(--anim );
 }
 
 .img-item:hover,
 .img-item:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
 }
 
 .img-list {
@@ -542,6 +559,8 @@ img {
   font-size: 18px;
   line-height: calc(28 / 18);
   color: var(--light-txt-cl);
+
+  transition: transform var(--anim );
   
 }
 
@@ -632,6 +651,8 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: var(--anim );
 }
 
 .socials-link-footer:hover,
@@ -654,6 +675,8 @@ img {
 
 .addr-link {
   font-style: normal;
+
+  transition: var(--anim );
 }
 
 .addr {
