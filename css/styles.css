@@ -12,8 +12,11 @@
   /* Background colors */
   --main-bg-cl: #2f303a;
   --light-bg-cl: #f5f5f5;
+  --third-bg-cl: #f5f4fa;
+  --fourth-bg-cl: #eeeeee;
 
   /* Others */
+  --fill-cl: #afb1b8;
 }
 
 body {
@@ -22,7 +25,7 @@ body {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  background-color: #ffffff;
+  background-color: var(--light-txt-cl);
 }
 
 /* reset */
@@ -148,8 +151,7 @@ img {
 .cnt-link:hover,
 .cnt-link:focus {
   color: var(--accent-cl);
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  transition: color 5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current:visited {
@@ -168,8 +170,7 @@ img {
   width: 100%;
   background-color: var(--accent-cl);
   border-radius: 2px;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  transition: color 5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link {
@@ -192,6 +193,10 @@ img {
   letter-spacing: 0.02em;
 }
 
+.cnt-item {
+  transition: color 5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .cnt-icon {
   fill: var(--scn-txt-cl);
 }
@@ -199,8 +204,7 @@ img {
 .cnt-link:hover .cnt-icon,
 .cnt-link:focus .cnt-icon {
   fill: var(--accent-cl);
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  transition: color 5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-group {
@@ -254,7 +258,7 @@ img {
 .icon {
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--third-bg-cl);
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
@@ -321,7 +325,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--light-txt-cl);
 }
 
 .about-overlay-title {
@@ -336,11 +340,11 @@ img {
 } */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--third-bg-cl);
 }
 
 .team-item {
-  background: #ffffff;
+  background: var(--light-txt-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -408,19 +412,17 @@ img {
 .socials-link:hover,
 .socials-link:focus {
   background-color: var(--accent-cl);
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  
 }
 
 .socials-icon {
-  fill: #afb1b8;
+  fill: var(--fill-cl);
 }
 
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
-  fill: #ffffff;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  fill: var(--light-txt-cl);
+  
 }
 
 /* Clients */
@@ -443,8 +445,8 @@ img {
 .clients-link {
   width: 170px;
   height: 92px;
-  background-color: #ffffff;
-  border: 1px solid #afb1b8;
+  background-color: var(--light-txt-cl);
+  border: 1px solid var(--fill-cl);
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -452,27 +454,25 @@ img {
 }
 
 .clients-icon {
-  fill: #afb1b8;
+  fill: var(--fill-cl);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-cl);
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  
 }
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
   fill: var(--accent-cl);
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  
 }
 
 /* Portfolio */
 
 .prtf {
-  background-color: white;
+  background-color: var(--light-txt-cl);
 }
 
 .prtf-list {
@@ -491,7 +491,7 @@ img {
 
 .prtf-btn,
 .active {
-  background-color: #eeeeee;
+  background-color: var(--fourth-bg-cl)
 }
 
 .prtf-btn:hover,
@@ -500,20 +500,18 @@ img {
   color: var(--light-txt-cl);
   box-shadow: 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  
 }
 
 .img-item {
   background-color: var(--light-txt-cl);
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--fourth-bg-cl);
 }
 
 .img-item:hover,
 .img-item:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  
 }
 
 .img-list {
@@ -543,15 +541,13 @@ img {
   padding: 63px 24px;
   font-size: 18px;
   line-height: calc(28 / 18);
-  color: #ffffff;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  color: var(--light-txt-cl);
+  
 }
 
 .img-link:hover .overlay {
   transform: translateY(0);
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  
 }
 
 .visually-hidden {
@@ -618,13 +614,13 @@ img {
 }
 
 .socials-icon-footer {
-  fill: #ffffff;
+  fill: var(--light-txt-cl);
 }
 
 .socials-footer-title {
   font-size: 14px;
   line-height: calc(16 / 14);
-  color: #ffffff;
+  color: var(--light-txt-cl);
   margin-bottom: 20px;
 }
 
@@ -641,8 +637,7 @@ img {
 .socials-link-footer:hover,
 .socials-link-footer:focus {
   background-color: var(--accent-cl);
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  
 }
 
 .addr-list {
@@ -672,8 +667,7 @@ img {
 .tm:hover,
 .tm:focus {
   color: var(--accent-cl);
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  
 }
 
 .backdrop.is-hidden {
@@ -694,8 +688,7 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 
 }
 
@@ -703,12 +696,11 @@ img {
   position: relative;
   width: 528px;
   height: 581px;
-  background-color: #ffffff;
+  background-color: var(--light-txt-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .modal-btn {
@@ -722,7 +714,7 @@ img {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--light-txt-cl);
 }
 
 
