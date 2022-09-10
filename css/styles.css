@@ -502,7 +502,7 @@ img {
   padding: 6px 22px;
   border-radius: 4px;
 
-  transition: background-color var(--anim), color var(--anim);
+  transition: background-color var(--anim), color var(--anim), box-shadow var(--anim);
 }
 
 .prtf-btn,
