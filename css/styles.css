@@ -159,10 +159,6 @@ img {
   color: var(--accent-cl);
 }
 
-.nav-link:visited::after{
-  color: var(--accent-cl);
-}
-
 .nav-box {
   position: relative;
 }
