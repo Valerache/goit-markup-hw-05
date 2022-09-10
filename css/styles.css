@@ -159,6 +159,10 @@ img {
   color: var(--accent-cl);
 }
 
+.nav-link:visited::after{
+  color: var(--accent-cl);
+}
+
 .nav-box {
   position: relative;
 }
@@ -166,11 +170,12 @@ img {
 .nav-box-line {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   height: 4px;
   width: 100%;
   background-color: var(--accent-cl);
   border-radius: 2px;
+  
 }
 
 .nav-link {
