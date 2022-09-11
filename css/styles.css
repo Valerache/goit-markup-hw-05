@@ -711,9 +711,9 @@ img {
 
 .modal {
   position: absolute;
-  top: 221px;
+  top: 50%;
   left: 50%;
-  translate: -50%;
+  transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
   background-color: var(--light-txt-cl);
